@@ -11,6 +11,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatChipsModule } from '@angular/material/chips'
+import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -29,7 +34,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatListModule,
     MatTableModule,
     MatTabsModule,
-    MatChipsModule
+    MatChipsModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports: [
     MatButtonModule,
@@ -41,7 +49,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatListModule,
     MatTableModule,
     MatTabsModule,
-    MatChipsModule
+    MatChipsModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 export class SharedModule { }

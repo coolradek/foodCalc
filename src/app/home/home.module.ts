@@ -7,6 +7,7 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardModule } from '../dashboard/dashboard.module';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { DashboardModule } from '../dashboard/dashboard.module';
   imports: [
     CommonModule,
     SharedModule,
-    DashboardModule
+    DashboardModule,
+    RouterModule
   ],
   exports: [
     HomeComponent

@@ -24,19 +24,19 @@
         <mat-list-item>
           <mat-icon mat-list-icon>dashboard</mat-icon>
           <h4 mat-line>
-            <a href="#">{{'SIDEBAR.DASHBOARD'}}</a>
+            <a [routerLink]="['dashboard']">{{'SIDEBAR.DASHBOARD'}}</a>
           </h4>
         </mat-list-item>
         <mat-list-item>
           <mat-icon mat-list-icon>featured_play_list</mat-icon>
           <h4 mat-line>
-            <a href="#">{{'SIDEBAR.MY_DISHES'}}</a>
+            <a [routerLink]="['dish']">{{'SIDEBAR.MY_DISHES'}}</a>
           </h4>
         </mat-list-item>
         <mat-list-item>
-          <mat-icon mat-list-icon>wb_sunnyt</mat-icon>
+          <mat-icon mat-list-icon>fastfood</mat-icon>
           <h4 mat-line>
-            <a href="#">{{'SIDEBAR.MY_PRODUCTS'}}</a>
+            <a [routerLink]="['product']">{{'SIDEBAR.MY_PRODUCTS'}}</a>
           </h4>
         </mat-list-item>
         <mat-divider></mat-divider>
@@ -44,7 +44,7 @@
         <mat-list-item>
           <mat-icon mat-list-icon>note</mat-icon>
           <h4 mat-line>
-            <a href="#">Notatki</a>
+            <a href="#">{{'SIDEBAR.NOTES'}}</a>
           </h4>
         </mat-list-item>
       </mat-list>
