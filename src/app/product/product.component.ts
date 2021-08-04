@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ProdList } from '../prod-list';
+
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -7,11 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  productList: Array<object>;
+  productList: ProdList[];
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() { 
     this.productList = [
       {
         'id': 1,
@@ -58,7 +58,12 @@ export class ProductComponent implements OnInit {
         'proteins': 17,
         'fats': 36
       }
-    ];
+    ]
+
+  }
+
+  ngOnInit() {
+
   }
 
 }
